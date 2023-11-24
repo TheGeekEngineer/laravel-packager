@@ -1,15 +1,15 @@
 <?php
 
-namespace JeroenG\Packager\Commands;
+namespace TheGeekEngineer\Packager\Commands;
 
 use Illuminate\Console\Command;
-use JeroenG\Packager\Conveyor;
-use JeroenG\Packager\ProgressBar;
+use TheGeekEngineer\Packager\Conveyor;
+use TheGeekEngineer\Packager\ProgressBar;
 
 /**
  * Get an existing package from a remote Github repository with its git repository.
  *
- * @author JeroenG
+ * @author TheGeekEngineer
  **/
 class PublishPackage extends Command
 {
@@ -35,7 +35,7 @@ class PublishPackage extends Command
     /**
      * Packages roll off of the conveyor.
      *
-     * @var object \JeroenG\Packager\Conveyor
+     * @var object \TheGeekEngineer\Packager\Conveyor
      */
     protected $conveyor;
 

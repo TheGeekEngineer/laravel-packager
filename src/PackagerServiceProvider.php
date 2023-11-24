@@ -1,6 +1,6 @@
 <?php
 
-namespace JeroenG\Packager;
+namespace TheGeekEngineer\Packager;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\ServiceProvider;
@@ -9,9 +9,9 @@ use Illuminate\Support\ServiceProvider;
  * This is the service provider.
  *
  * Place the line below in the providers array inside app/config/app.php
- * <code>'JeroenG\Packager\PackagerServiceProvider',</code>
+ * <code>'TheGeekEngineer\Packager\PackagerServiceProvider',</code>
  *
- * @author JeroenG
+ * @author TheGeekEngineer
  **/
 class PackagerServiceProvider extends ServiceProvider
 {
@@ -21,16 +21,16 @@ class PackagerServiceProvider extends ServiceProvider
      * @var bool
      */
     protected $commands = [
-        'JeroenG\Packager\Commands\NewPackage',
-        'JeroenG\Packager\Commands\RemovePackage',
-        'JeroenG\Packager\Commands\GetPackage',
-        'JeroenG\Packager\Commands\GitPackage',
-        'JeroenG\Packager\Commands\ListPackages',
-        'JeroenG\Packager\Commands\MoveTests',
-        'JeroenG\Packager\Commands\CheckPackage',
-        'JeroenG\Packager\Commands\PublishPackage',
-        'JeroenG\Packager\Commands\EnablePackage',
-        'JeroenG\Packager\Commands\DisablePackage',
+        'TheGeekEngineer\Packager\Commands\NewPackage',
+        'TheGeekEngineer\Packager\Commands\RemovePackage',
+        'TheGeekEngineer\Packager\Commands\GetPackage',
+        'TheGeekEngineer\Packager\Commands\GitPackage',
+        'TheGeekEngineer\Packager\Commands\ListPackages',
+        'TheGeekEngineer\Packager\Commands\MoveTests',
+        'TheGeekEngineer\Packager\Commands\CheckPackage',
+        'TheGeekEngineer\Packager\Commands\PublishPackage',
+        'TheGeekEngineer\Packager\Commands\EnablePackage',
+        'TheGeekEngineer\Packager\Commands\DisablePackage',
     ];
 
     /**

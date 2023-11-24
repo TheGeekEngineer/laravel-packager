@@ -1,6 +1,6 @@
 <?php
 
-namespace JeroenG\Packager\Tests;
+namespace TheGeekEngineer\Packager\Tests;
 
 use Illuminate\Support\Facades\Artisan;
 

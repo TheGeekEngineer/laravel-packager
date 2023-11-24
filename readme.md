@@ -12,13 +12,13 @@ This package provides you with a simple tool to set up a new package and it will
 Via Composer
 
 ```bash
-composer require jeroen-g/laravel-packager --dev
+composer require thegeekengineer/laravel-packager --dev
 ```
 
 If you do not run Laravel 5.5 (or higher), then add the service provider in `config/app.php`:
 
 ```php
-JeroenG\Packager\PackagerServiceProvider::class,
+TheGeekEnginee\Packager\PackagerServiceProvider::class,
 ```
 
 If you do run the package on Laravel 5.5+, [package auto-discovery](https://medium.com/@taylorotwell/package-auto-discovery-in-laravel-5-5-ea9e3ab20518) takes care of the magic of adding the service provider.
@@ -26,14 +26,14 @@ Be aware that the auto-discovery also means that this package is loaded in your 
 
 ```php
 if ($this->app->environment('local')) {
-    $this->app->register('JeroenG\Packager\PackagerServiceProvider');
+    $this->app->register('TheGeekEnginee\Packager\PackagerServiceProvider');
 }
 ```
 
-Optional you can publish the configuration to provide a different service provider stub. The default is [here](https://github.com/jeroen-g/packager-skeleton).
+Optional you can publish the configuration to provide a different service provider stub. The default is [here](https://github.com/thegeekengineer/packager-skeleton).
 
 ```bash
-php artisan vendor:publish --provider="JeroenG\Packager\PackagerServiceProvider"
+php artisan vendor:publish --provider="TheGeekEnginee\Packager\PackagerServiceProvider"
 ```
 
 ## Available commands
@@ -60,7 +60,7 @@ php artisan packager:new my-vendor/my-package
 Alternatively you may also define your vendor and name with a forward slash instead of a space.
 
 **Remarks:**
-The new package will be based on [this custom skeleton](https://github.com/jeroen-g/packager-skeleton). If you want to use a different package skeleton, you can either:
+The new package will be based on [this custom skeleton](https://github.com/thegeekengineer/packager-skeleton). If you want to use a different package skeleton, you can either:
 - (A) publish the configuration file and change the default skeleton that will be used by all `packager:new` calls.
 - (B) use the flag `--skeleton="http://github.com/path/to/archive/master.zip"` with your own skeleton to use the given skeleton for this one run instead of the one in the configuration.
 
@@ -176,7 +176,7 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 
 ## Credits
 
-- [JeroenG][link-author]
+- [TheGeekEnginee][link-author]
 - [All Contributors][link-contributors]
 
 ## License
@@ -184,14 +184,14 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 The EU Public License. Please see [license.md](license.md) for more information.
 
 
-[ico-version]: https://poser.pugx.org/jeroen-g/laravel-packager/v/stable?format=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/jeroen-g/laravel-packager.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/Jeroen-G/laravel-packager/master.svg?style=flat-square
+[ico-version]: https://poser.pugx.org/thegeekengineer/laravel-packager/v/stable?format=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/thegeekengineer/laravel-packager.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/thegeekengineer/laravel-packager/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/37218114/shield
 
-[link-packagist]: https://packagist.org/packages/jeroen-g/laravel-packager
-[link-downloads]: https://packagist.org/packages/jeroen-g/laravel-packager
-[link-travis]: https://travis-ci.org/Jeroen-G/laravel-packager
+[link-packagist]: https://packagist.org/packages/thegeekengineer/laravel-packager
+[link-downloads]: https://packagist.org/packages/thegeekengineer/laravel-packager
+[link-travis]: https://travis-ci.org/thegeekengineer/laravel-packager
 [link-styleci]: https://styleci.io/repos/37218114
-[link-author]: https://github.com/Jeroen-G
+[link-author]: https://github.com/thegeekengineer
 [link-contributors]: ../../contributors

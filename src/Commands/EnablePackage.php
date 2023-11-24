@@ -1,16 +1,16 @@
 <?php
 
-namespace JeroenG\Packager\Commands;
+namespace TheGeekEngineer\Packager\Commands;
 
 use Illuminate\Console\Command;
-use JeroenG\Packager\Conveyor;
-use JeroenG\Packager\ProgressBar;
-use JeroenG\Packager\Wrapping;
+use TheGeekEngineer\Packager\Conveyor;
+use TheGeekEngineer\Packager\ProgressBar;
+use TheGeekEngineer\Packager\Wrapping;
 
 /**
  * Enable an existing package.
  *
- * @author JeroenG
+ * @author TheGeekEngineer
  **/
 class EnablePackage extends Command
 {
@@ -33,14 +33,14 @@ class EnablePackage extends Command
     /**
      * Packages roll off of the conveyor.
      *
-     * @var object \JeroenG\Packager\Conveyor
+     * @var object \TheGeekEngineer\Packager\Conveyor
      */
     protected $conveyor;
 
     /**
      * Packages are packed in wrappings to personalise them.
      *
-     * @var object \JeroenG\Packager\Wrapping
+     * @var object \TheGeekEngineer\Packager\Wrapping
      */
     protected $wrapping;
 

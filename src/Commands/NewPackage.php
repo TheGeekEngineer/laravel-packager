@@ -1,19 +1,19 @@
 <?php
 
-namespace JeroenG\Packager\Commands;
+namespace TheGeekEngineer\Packager\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Validation\Validator as ValidatorInterface;
 use Illuminate\Support\Facades\Validator;
-use JeroenG\Packager\Conveyor;
-use JeroenG\Packager\ProgressBar;
-use JeroenG\Packager\ValidationRules\ValidClassName;
-use JeroenG\Packager\Wrapping;
+use TheGeekEngineer\Packager\Conveyor;
+use TheGeekEngineer\Packager\ProgressBar;
+use TheGeekEngineer\Packager\ValidationRules\ValidClassName;
+use TheGeekEngineer\Packager\Wrapping;
 
 /**
  * Create a brand new package.
  *
- * @author JeroenG
+ * @author TheGeekEngineer
  **/
 class NewPackage extends Command
 {
@@ -36,14 +36,14 @@ class NewPackage extends Command
     /**
      * Packages roll off of the conveyor.
      *
-     * @var object \JeroenG\Packager\Conveyor
+     * @var object \TheGeekEngineer\Packager\Conveyor
      */
     protected $conveyor;
 
     /**
      * Packages are packed in wrappings to personalise them.
      *
-     * @var object \JeroenG\Packager\Wrapping
+     * @var object \TheGeekEngineer\Packager\Wrapping
      */
     protected $wrapping;
 

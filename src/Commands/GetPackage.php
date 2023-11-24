@@ -1,16 +1,16 @@
 <?php
 
-namespace JeroenG\Packager\Commands;
+namespace TheGeekEngineer\Packager\Commands;
 
 use Illuminate\Console\Command;
-use JeroenG\Packager\Conveyor;
-use JeroenG\Packager\ProgressBar;
-use JeroenG\Packager\Wrapping;
+use TheGeekEngineer\Packager\Conveyor;
+use TheGeekEngineer\Packager\ProgressBar;
+use TheGeekEngineer\Packager\Wrapping;
 
 /**
  * Get an existing package from a remote git repository.
  *
- * @author JeroenG
+ * @author TheGeekEngineer
  **/
 class GetPackage extends Command
 {
@@ -38,14 +38,14 @@ class GetPackage extends Command
     /**
      * Packages roll off of the conveyor.
      *
-     * @var object \JeroenG\Packager\Conveyor
+     * @var object \TheGeekEngineer\Packager\Conveyor
      */
     protected $conveyor;
 
     /**
      * Packages are packed in wrappings to personalise them.
      *
-     * @var object \JeroenG\Packager\Wrapping
+     * @var object \TheGeekEngineer\Packager\Wrapping
      */
     protected $wrapping;
 

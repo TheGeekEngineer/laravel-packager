@@ -1,6 +1,6 @@
 <?php
 
-namespace JeroenG\Packager\Commands;
+namespace TheGeekEngineer\Packager\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -9,7 +9,7 @@ use Symfony\Component\Process\Process;
 /**
  * List all locally installed packages.
  *
- * @author JeroenG
+ * @author TheGeekEngineer
  **/
 class ListPackages extends Command
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace JeroenG\Packager;
+namespace TheGeekEngineer\Packager;
 
 use GuzzleHttp\Client;
-use JeroenG\Packager\ArchiveExtractors\Manager;
+use TheGeekEngineer\Packager\ArchiveExtractors\Manager;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;

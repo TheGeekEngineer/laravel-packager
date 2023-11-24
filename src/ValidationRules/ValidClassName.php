@@ -1,6 +1,6 @@
 <?php
 
-namespace JeroenG\Packager\ValidationRules;
+namespace TheGeekEngineer\Packager\ValidationRules;
 
 use Illuminate\Contracts\Validation\Rule;
 

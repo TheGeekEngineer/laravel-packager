@@ -1,6 +1,6 @@
 <?php
 
-namespace JeroenG\Packager\ArchiveExtractors;
+namespace TheGeekEngineer\Packager\ArchiveExtractors;
 
 use ZipArchive;
 
