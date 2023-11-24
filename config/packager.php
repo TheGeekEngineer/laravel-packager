@@ -6,7 +6,7 @@ return [
      * The following skeleton will be downloaded for each new package.
      * Default: https://github.com/Jeroen-G/packager-skeleton/archive/master.zip
      */
-    'skeleton' => 'https://github.com/Jeroen-G/packager-skeleton/archive/master.zip',
+    'skeleton' => 'https://github.com/TheGeekEngineer/packager-skeleton/archive/main.zip',
 
     /*
      * When you run into issues downloading the skeleton, this might be because of
